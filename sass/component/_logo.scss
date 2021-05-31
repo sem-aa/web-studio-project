@@ -1,0 +1,31 @@
+/* logo */
+.logo {
+  color: $accent-color;
+  font-family: Raleway;
+
+  font-weight: 700;
+  font-size: 26px;
+  font-style: normal;
+  line-height: 1.2;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $title-text-color;
+  }
+}
+
+.part-logo {
+  color: $title-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.logo-footer {
+  color: $primary-white-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,139 @@
+.page-header {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+
+  background-color: $primary-white-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  @media screen and (min-width: $desktop) {
+    justify-content: start;
+    .logo {
+      margin-right: 85px;
+    }
+  }
+  .icon-cross:hover {
+    fill: $accent-color;
+  }
+  .icon-menu:hover {
+    fill: $accent-color;
+  }
+}
+
+.site-nav {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  .link {
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-bottom: 8px;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      margin-right: 50px;
+    }
+  }
+
+  .item {
+    margin-bottom: 40px;
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0px;
+    }
+  }
+}
+.site-nav .link.main {
+  color: $accent-color;
+  position: relative;
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.nav-registration {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+  .link {
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+  }
+  .item {
+    display: block;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      &:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.icon-contact {
+  display: inline-flex;
+  fill: $primary-text-color;
+  align-items: center;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+.svg-contact {
+  margin-right: 10px;
+}

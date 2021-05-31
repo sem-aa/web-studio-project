@@ -1,0 +1,48 @@
+.profile-section {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.our-profile {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin: -15px;
+
+  .title {
+    color: $primary-white-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+  }
+
+  .flex-element {
+    position: relative;
+    width: calc((100% - 6 * 15px) / 3);
+    margin: 15px;
+    .title-product {
+      position: absolute;
+      bottom: 0;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: $primary-white-color;
+
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      width: 370px;
+      height: 70px;
+      background: rgba(47, 48, 58, 0.8);
+    }
+  }
+}

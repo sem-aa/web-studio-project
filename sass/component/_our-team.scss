@@ -1,0 +1,64 @@
+.flex-team {
+  margin: -15px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .img {
+    width: 100%;
+  }
+  .element {
+    margin: 15px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: $tablet) {
+      width: calc((100% - 2 * 30px) / 2);
+    }
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 4 * 30px) / 4);
+    }
+  }
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+
+  text-align: center;
+}
+
+.team-icon {
+  display: flex;
+  justify-content: center;
+  .svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+
+    fill: $icon-color;
+
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 24px;
+    &:hover {
+      fill: $primary-white-color;
+      background-color: $accent-color;
+    }
+    & :last-child {
+      margin-right: 0px;
+    }
+  }
+}
